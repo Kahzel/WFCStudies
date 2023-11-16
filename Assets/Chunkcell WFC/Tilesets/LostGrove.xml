@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Tileset
+    location="Sprites/Legacy Fantasy - Lost Glades/Assets"
+    size="2"
+>
+    <Chunk symmetry="T" ref="grass">
+        <Variation pattern="[[0,1], [2,2]]">
+            <Tile index="0" id="1"/>
+            <Tile index="1" id="2"/>
+            <Tile index="2" id="20"/>
+        </Variation>
+        <Variation pattern="[[0,1], [2,2]]">
+            <Tile index="0" id="1"/>
+            <Tile index="1" id="2"/>
+            <Tile index="2" id="21"/>
+        </Variation>
+        <Variation pattern="[[0,1], [2,2]]">
+            <Tile index="0" id="2"/>
+            <Tile index="1" id="1"/>
+            <Tile index="2" id="20"/>
+        </Variation>
+        <Variation pattern="[[0,1], [2,2]]">
+            <Tile index="0" id="2"/>
+            <Tile index="1" id="1"/>
+            <Tile index="2" id="21"/>
+        </Variation>
+        <Variation pattern="[[0,0], [1,1]]">
+            <Tile index="0" id="1"/>
+            <Tile index="1" id="20"/>>
+        </Variation>
+        <Variation pattern="[[0,0], [1,1]]">
+            <Tile index="0" id="1"/>
+            <Tile index="1" id="21"/>>
+        </Variation>
+        <Variation pattern="[[0,1], [2,2]]">
+            <Tile index="0" id="1"/>
+            <Tile index="1" id="104"/>
+            <Tile index="2" id="20"/>
+        </Variation>
+        <Variation pattern="[[0,1], [2,2]]">
+            <Tile index="0" id="1"/>
+            <Tile index="1" id="105"/>
+            <Tile index="2" id="20"/>
+        </Variation>
+    </Chunk>
+    <Chunk symmetry="T" ref="tallgrass">
+        <Variation pattern="[[0,1], [2,3]]">
+            <Tile index="0" id="102"/>
+            <Tile index="1" id="103"/>
+            <Tile index="2" id="129"/>
+            <Tile index="3" id="130"/>
+        </Variation>
+    </Chunk>
+    <Chunk symmetry="X" ref="air">
+        <Variation pattern="[[0, 0], [0, 0]]">
+            <Tile index="0" id="-1"/>
+        </Variation>
+    </Chunk>
+    <Chunk symmetry="T" ref="tallgrassair">
+        <Variation pattern="[[0, 0], [1, 2]]">
+            <Tile index="0" id="-1"/>
+            <Tile index="1" id="77"/>
+            <Tile index="2" id="78"/>
+        </Variation>
+    </Chunk>
+    <Chunk symmetry="L" ref="grassslope1">
+        <Variation pattern="[[0,1], [2,3]]">
+            <Tile index="0" id="26"/>
+            <Tile index="1" id="51"/>
+            <Tile index="2" id="52"/>
+            <Tile index="3" id="155"/>
+        </Variation>
+    </Chunk>
+    <Chunk symmetry="L" ref="grassslope2">
+        <Variation pattern="[[0,0], [1,2]]">
+            <Tile index="0" id="-1"/>
+            <Tile index="1" id="6"/>
+            <Tile index="2" id="25"/>
+        </Variation>
+    </Chunk>
+    <Chunk symmetry="L" ref="grassslope3">
+        <Variation pattern="[[0,1], [1,1]]">
+            <Tile index="0" id="52"/>
+            <Tile index="1" id="155"/>
+        </Variation>
+    </Chunk>
+    <Chunk symmetry="L" ref="grassslope4">
+        <Variation pattern="[[0,1], [2,3]]">
+            <Tile index="0" id="6"/>
+            <Tile index="1" id="4"/>
+            <Tile index="2" id="26"/>
+            <Tile index="3" id="51"/>
+        </Variation>
+    </Chunk>
+    <Chunk symmetry="L" ref="wallfill">
+        <Variation pattern="[[0,1], [2,3]]">
+            <Tile index="0" id="46"/>
+            <Tile index="1" id="47"/>
+            <Tile index="2" id="74"/>
+            <Tile index="3" id="75"/>
+        </Variation>
+        <Variation pattern="[[0,0], [1,1]]">
+            <Tile index="0" id="128"/>
+            <Tile index="1" id="155"/>
+        </Variation>
+        <Variation pattern="[[0,0], [1,1]]">
+            <Tile index="0" id="128"/>
+            <Tile index="1" id="182"/>
+        </Variation>
+        <Variation pattern="[[0,0], [0,0]]">
+            <Tile index="0" id="128"/>
+        </Variation>
+        <Variation pattern="[[0,0], [0,0]]">
+            <Tile index="0" id="155"/>
+        </Variation>
+    </Chunk>
+    <Neighbor from="grass" to="air" direction="up" dihedralf="0" dihedralt="0"/>
+    <Neighbor from="tallgrass" to="tallgrassair" direction="up" dihedralf="0" dihedralt="0"/>
+    <Neighbor from="grass" to="grass" direction="right" dihedralf="0" dihedralt="0" symmetric="true"/>
+    <Neighbor from="grass" to="tallgrass" direction="right" dihedralf="0" dihedralt="0" symmetric="true"/>
+    <Neighbor from="grass" to="grassslope1" direction="right" dihedralf="0" dihedralt="0"/>
+    <Neighbor from="grass" to="grassslope1" direction="left" dihedralf="0" dihedralt="4"/>
+    <Neighbor from="tallgrass" to="grassslope1" direction="right" dihedralf="0" dihedralt="0"/>
+    <Neighbor from="tallgrass" to="grassslope1" direction="left" dihedralf="0" dihedralt="4"/>
+    <Neighbor from="grassslope1" to="grassslope2" direction="up" dihedralf="0" dihedralt="0"/>
+    <Neighbor from="grassslope1" to="grassslope3" direction="right" dihedralf="0" dihedralt="0"/>
+    <Neighbor from="grassslope3" to="grassslope4" direction="up" dihedralf="0" dihedralt="0"/>
+    <Neighbor from="grassslope2" to="grassslope4" direction="right" dihedralf="0" dihedralt="0"/>
+    <Neighbor from="grassslope1" to="grassslope2" direction="up" dihedralf="4" dihedralt="4"/>
+    <Neighbor from="grassslope1" to="grassslope3" direction="right" dihedralf="4" dihedralt="4"/>
+    <Neighbor from="grassslope3" to="grassslope4" direction="up" dihedralf="4" dihedralt="4"/>
+    <Neighbor from="grassslope2" to="grassslope4" direction="right" dihedralf="4" dihedralt="4"/>
+    <Neighbor from="grass" to="wallfill" direction="down" dihedralf="0" dihedralt="0"/>
+    <Neighbor from="tallgrass" to="wallfill" direction="down" dihedralf="0" dihedralt="0"/>
+    <Neighbor from="grassslope1" to="wallfill" direction="down" dihedralf="0" dihedralt="0"/>
+    <Neighbor from="grassslope3" to="wallfill" direction="down" dihedralf="0" dihedralt="0"/>
+    <Neighbor from="grassslope4" to="grass" direction="right" dihedralf="0" dihedralt="0" />
+    <Neighbor from="grassslope4" to="tallgrass" direction="right" dihedralf="0" dihedralt="0" />
+    <Neighbor from="grassslope4" to="grass" direction="right" dihedralf="4" dihedralt="0" />
+    <Neighbor from="grassslope4" to="tallgrass" direction="right" dihedralf="4" dihedralt="0" />
+</Tileset>
